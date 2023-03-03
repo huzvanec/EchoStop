@@ -1,0 +1,13 @@
+main: cz.jeme.programu.echostop.EchoStop
+name: EchoStop
+version: 1.0
+author: XD_CZ
+api-version: 1.16
+description: Stop the server after a cooldown and warn all players
+commands:
+   echostop:
+      description: Stop the server with a cooldown
+      usage: 'Usage: /echostop'
+      aliases: estop
+      permission: echostop.echostop
+      permission-message: You don't have the permission to use this command!
