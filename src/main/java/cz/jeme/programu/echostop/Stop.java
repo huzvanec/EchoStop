@@ -27,6 +27,7 @@ public class Stop {
         Title titleDisplay = Title.title(title, subtitle, times);
 
 
+
         for (Player player : Bukkit.getOnlinePlayers()) {
             player.showTitle(titleDisplay);
         }
