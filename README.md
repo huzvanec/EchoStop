@@ -11,7 +11,7 @@ Paper based servers 1.19.4+<br>
 `/estop stop <time in seconds>`
 #### Cancel a server stop during the countdown
 `/estop cancel`
-#### Reload the plugin congiguration
+#### Reload the plugin configuration
 `/estop reload`
 ## Build
 Requirements: <br>
