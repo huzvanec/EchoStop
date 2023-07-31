@@ -1,4 +1,0 @@
-name: EchoStop
-version: '${project.version}'
-main: cz.jeme.programu.echostop.EchoStop
-api-version: '1.19'
