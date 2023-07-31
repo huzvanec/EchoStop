@@ -5,6 +5,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -88,8 +89,16 @@ public class EchoStopCommand extends Command {
     @Override
     public @NotNull List<String> tabComplete(@NotNull CommandSender sender, @NotNull String alias, @NotNull String[] args) throws IllegalArgumentException {
         if (args.length == 1) {
-            return List.of("stop", "cancel", "reload");
+            return containsFilter(List.of("stop", "cancel", "reload"), args[0]);
         }
         return Collections.emptyList();
+    }
+
+    private List<String> containsFilter(List<String> list, String mark) {
+        List<String> filtered = new ArrayList<>();
+        for (String string : list) {
+            if (string.contains(mark)) filtered.add(string);
+        }
+        return filtered;
     }
 }
